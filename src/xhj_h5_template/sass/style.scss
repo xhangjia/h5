@@ -1,0 +1,10 @@
+@import "common.scss";
+body,html,.wrap,.page{
+	width: 100%;
+	height: 100%;
+	// overflow: hidden;
+	position: relative;
+}
+.wrap{
+    overflow: hidden;
+}

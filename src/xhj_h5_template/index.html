@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小行家H5模板</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Xiaohangjia" />
+    <script type="text/javascript">
+        var docEl = document.documentElement, Size = docEl.clientWidth / (750 / 40); 
+        docEl.style.fontSize = Size + 'px'; 
+        if(Size >= 25){ 
+            Size = 20;
+            docEl.style.fontSize = '20px';
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- 旋转屏幕提示代码 portrait [[ -->
+    <div id="orientation_hinter" class="landscape">
+        <div class="hinter_phone"><i></i></div>
+        <div class="hinter_rotate"></div>
+        <div class="hinter_text landscape">请切换手机竖屏模式</div>
+        <div class="hinter_text portrait">请切换手机横屏模式</div>
+    </div> 
+    <!-- 旋转屏幕提示代码 ]] -->
+
+	<!-- loading页 -->
+    <div class="page ld_page"style="display: none;">
+        
+    </div>
+    <!-- loading页 -->
+
+
+    <!-- 背景音乐 -->
+    <div class="music">
+        <audio src="https://img.xhangjia.com/h5/2019/01/jinliufu_1901_couplet_fe/bgmusic.mp3" loop="loop" id="Music"></audio>
+        <div class="music-on"></div>
+    </div>
+
+    
+    <!-- 所有页面 -->
+	<div class="wrap">
+
+        <div class="page page1">
+
+        </div>
+
+    </div>
+
+
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="//img.xhangjia.com/scripts/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/xhj.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<!-- 百度统计代码 -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?29fe37985b5cd2a341e821b85502b2fe";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<!-- 调试工具 -->
+<!-- <script src="//img.xhangjia.com/scripts/vconsole/vconsole.min.js"></script> -->
+<!-- <script src="//img.xhangjia.com/scripts/eruda/eruda.min.js"></script> -->
+<script>
+    //vconsole
+    //var vConsole = new VConsole();
+
+    // eruda
+    // eruda.init();
+</script> 
+</body>
+</html>

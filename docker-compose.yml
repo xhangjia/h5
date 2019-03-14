@@ -1,0 +1,14 @@
+web:
+  image: 'registry-vpc.cn-shenzhen.aliyuncs.com/xhangjia/xhj_h5_template'
+  restart: always
+  ports:
+    - 80/tcp
+  environment:
+  - 'constraint:aliyun.node_index!=1'
+  labels:
+    aliyun.logs: /var/log
+    aliyun.probe.url: 'tcp://container:80'
+    aliyun.routing.port_80: http://a.xhangjia.com/xhj_h5_template/
+    aliyun.scale: "2"
+    aliyun.probe.initial_delay_seconds: "2"
+    aliyun.probe.timeout_seconds: "2"
